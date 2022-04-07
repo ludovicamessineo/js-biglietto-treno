@@ -44,5 +44,10 @@ console.log(resultPrice);
 
 // Trasformare il prezzo finale con solo due decimali 
 const priceFormatted = resultPrice .toFixed(2);
+console.log(priceFormatted);
+
+const finalPrice = `Il prezzo del tuo biglietto è: ${priceFormatted} €`
+console.log(finalPrice);
 
 // Stampare nella pagina html
+document.getElementById('user-price').innerHTML = finalPrice;
